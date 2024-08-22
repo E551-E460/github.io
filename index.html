@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Body Mass Index Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <div class="logo"><img src="assets/images/logo.svg" alt="" /></div>
+          <h1>Body Mass  Calculator #BMI</h1>
+          <p>
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+        </div>
+        <div class="calculator">
+          <div class="form" id="form">
+            <h3>Enter your details below</h3>
+            <div class="units">
+              <div class="form-control">
+                <input type="radio" name="input" value="metric" id="metric" class="radio active" checked />
+                <label for="metric">Metric</label>
+              </div>
+              <div class="form-control">
+                
+                
+
+              </div>
+            </div>
+            <div class="infos">
+              <div class="metric">
+                <div class="form-control">
+                  <label for="height">Height</label>
+                  <div class="input-container">
+                    <input type="number" id="height" placeholder="0" />
+                    <span class="unit-height" id="unit-height">cm</span>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="weight">Weight</label>
+                  <div class="input-container">
+                    <input type="number" id="weight" placeholder="0" />
+                    <span class="unit-weight" id="unit-weight">kg</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="imperial">
+                <div class="form-control">
+                  <label for="height">Height</label>
+                  <div class="container-flex">
+                    <div class="input-container">
+                      <input type="number" id="feet" class="feet" placeholder="0">
+                      <small>ft</small>
+                    </div>
+                    <div class="input-container">
+                      <input type="number" id="inch" class="inch" placeholder="0">
+                      <small>in</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label for="weight">Weight</label>
+                  <div class="container-flex">
+                    <div class="input-container">
+                      <input type="number" id="st" class="st" placeholder="0">
+                      <small>st</small>
+                    </div>
+                    <div class="input-container">
+                      <input type="number" id="lbs" class="lbs" placeholder="0">
+                      <small>lbs</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="container-result" id="container-result">
+            <div class="bmi" id="bmi">
+              <div class="result-heading" id="result-heading">
+                <p>Your BMI is...</p>
+                <div class="result" id="result">23.4</div>
+              </div>
+              <div class="result-text">
+                <p>Your BMI suggests you're <span id="classification"></span>. Your ideal weight is between . <span
+                    id="min-weight"></span> - <span id="max-weight"></span> please Go to Gym</span></p>
+              </div>
+            </div>
+            <div class="welcome-text" id="welcome">
+              <h3>Welcome!</h3>
+              <p>Enter your height and weight then press {ENTER} and you’ll see your BMI result here</p>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section explanation -->
+      <section class="explanation">
+        <img src="assets/images/pattern-curved-line-left.svg" alt="curve" class="curve-left">
+        <div class="image">
+          <img src="assets/images/full-body-workout.jpg" alt="man-eating" id="pic" />
+        </div>
+        <div class="content">
+          <h2>Your food table</h2>
+          <p>
+            Please keep up with the food table and and come back at 2nd of Novamber .. pass = (1234)
+          </p>
+          <br>
+          <br>
+          <a href="BMI.pdf" download style="margin-top: 1000px;" class="dow">Download the pdf</a>
+        </div>
+      </section>
+      <!-- Section Habits -->
+      <section class="positive-habits">
+        <div>
+          <img src="assets/images/icon-eating.svg" alt="eating" />
+          <div>
+            <h3>Healthy Eating</h3>
+            <p>
+              Healthy eating promotes weight control, disease prevention, better
+              digestion, immunity, mental clarity, and mood.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/icon-exercise.svg" alt="exercise" />
+          <div>
+            <h3>Regular exercise</h3>
+            <p>
+              Exercise improves fitness, aids weight control, elevates mood, and
+              reduces disease risk, fostering wellness and longevity.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/icon-sleep.svg" alt="sleep" />
+          <div>
+            <h3>Adequate sleep</h3>
+            <p>
+              Sleep enhances mental clarity, emotional stability, and physical
+              wellness, promoting overall restoration and rejuvenation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section Limitations -->
+      <section class="limitations">
+        <img src="assets/images/pattern-curved-line-right.svg" alt="curve" class="curve">
+        <div class="limitations-content">
+          <h2>What is BMI ?</h2>
+          <p>
+            The BMI range is 18.5 to 24.9. A healthy weight Maintaining a healthy weight may reduce your chances of developing health problems later in life, such as obesity and type 2 diabetes. Aim for a nutritious diet that is low in fat and sugar and includes plenty of fruits and vegetables. In addition, get regular physical activity, ideally about 30 minutes a day, five days a week.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card gender">
+            <div class="card-heading">
+              <img src="assets/images/icon-gender.svg" alt="" />
+              <h4>What are the different BMI categories?</h4>
+            </div>
+            <p>
+              Under BMI classification categories are: Less than 18.5, Very thin from 18.5 to 24.9, Normal weight from 25 to 29.9, Overweight from 30 and above.
+            </p>
+          </div>
+          <div class="card age">
+            <div class="card-heading">
+              <img src="assets/images/icon-age.svg" alt="" />
+              <h4>Are there any general tips to improve health?</h4>
+            </div>
+            <p>
+              Make sure to drink plenty of water, try to maintain your physical activity regularly, and avoid processed foods and excess sugars.
+            </p>
+          </div>
+          <div class="card muscle">
+            <div class="card-heading">
+              <img src="assets/images/icon-muscle.svg" alt="" />
+              <h4>How can I have a proper diet?</h4>
+            </div>
+            <p>
+              Based on the BMI classification, we can determine the appropriate type of diet. If your weight is normal, your goal is to maintain your weight by following a balanced diet and exercising. If you are overweight or obese, you may need to reduce calories and improve your meal plan, while consulting a nutritionist. If you are thin, you may need to increase calories and eat foods rich in protein.
+            </p>
+          </div>
+          <div class="card pregnancy">
+            <div class="card-heading">
+              <img src="assets/images/icon-pregnancy.svg" alt="" />
+              <h4>Are there any certified doctors?</h4>
+            </div>
+            <p>
+              Yes, there are highly qualified certified doctors in the field of nutrition.
+            </p>
+          </div>
+          <div class="card race">
+            <div class="card-heading">
+              <img src="assets/images/icon-race.svg" alt="" />
+              <h4>Ask our doctors</h4>
+            </div>
+            <a href="https://omrwelely.wixsite.com/ask-doc">Ask DOC</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <center><small>
+        <p>&copy;
+          <script>document.write(new Date().getFullYear())</script>Developed by Omar El-welely
+        </p>
+      </small>
+    </center>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
